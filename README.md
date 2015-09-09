@@ -27,7 +27,7 @@ AutoAudio:
 On Ubuntu/Debian you can get them using:  
 `sudo apt-get install python python-pil python-numpy python-pyopencl python-opencv`
 
-On other platforms, you can use pip, or visit the libraries' websites.
+On other platforms, you can use [pip](https://pip.pypa.io/en/stable/), or visit the libraries' websites.
 
 To run AutoImages:  
 `python AutoImagesGPU2.py`  
