@@ -37,4 +37,4 @@ To run AutoAudio:
 Don't worry if when you run it, it gives the following message:  
 `/usr/lib/python2.7/dist-packages/pyopencl/__init__.py:61: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more. "to see more.", CompilerWarning)`
 
-Also don't worry if AutoArt closes at, say, 10/15, prints `Segmentation Fault`, and reopens saying 0/5, all 15 images will be made.
+Also don't worry if AutoArt closes at, say, 10/15, prints `Segmentation Fault`, and re-opens saying 0/5, all 15 images will be made.
