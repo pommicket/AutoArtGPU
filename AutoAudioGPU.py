@@ -133,8 +133,8 @@ def createAudios():
 
     loadingLabel.destroy()
     
-    finishedLabel = tk.Label(root, text='AutoImages has finished creating your\
- images.')
+    finishedLabel = tk.Label(root, text='AutoAudio has finished creating your\
+ audio files.')
     finishedLabel.grid(row=2, column=0)
 
     goToMenuButton = tk.Button(root, text='Go back to menu', command=goToMenu)
