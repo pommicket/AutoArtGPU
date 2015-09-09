@@ -2,10 +2,6 @@ import GPU
 import numpy as np
 import random
 try:
-    import Image
-except:
-    from PIL import Image
-try:
     import Tkinter as tk
     import tkFileDialog as filedialog
 except:
