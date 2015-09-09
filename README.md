@@ -3,6 +3,8 @@ AutoArt that uses OpenCL to run on your GPU
 
 This is the GPU version of [AutoArt](https://github.com/pommicket/AutoArt).
 
+For a live version of AutoVideos that creates them as they play, go to https://github.com/pommicket/AutoVideosLive.
+
 **AutoArtGPU requires the following dependencies:**
 
 AutoImages:
