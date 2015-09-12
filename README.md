@@ -43,6 +43,16 @@ To run AutoVideos:
 To run AutoAudio:  
 `python AutoAudioGPU.py`
 
+If you are getting this error:
+```
+pyopencl.LogicError: Context failed: invalid value
+```
+Just uncomment (remove the # at the start of the line) the following lines in AutoAudioGPU.py, AutoImagesGPU.py, and AutoVideosGPU.py:
+```
+GPU.platform_id = -1
+```
+
+
 Don't worry if when you run it, it gives the following message:  
 ```
 /usr/lib/python2.7/dist-packages/pyopencl/__init__.py:61: 
