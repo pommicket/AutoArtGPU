@@ -1,6 +1,6 @@
 import GPU
 
-GPU.platform_id = -1 #Remove the # at the start of the line to choose platform
+GPU.platform_id = -1
 
 import numpy as np
 import random
