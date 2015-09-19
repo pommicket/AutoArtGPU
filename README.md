@@ -37,12 +37,17 @@ cd /directory/where/AutoArt/is/
 ```
 
 To run AutoImages:  
-`python AutoImagesGPU2.py`  
+```
+python AutoImagesGPU2.py
+```
 To run AutoVideos:  
-`python AutoVideosGPU2.py`  
+```
+python AutoVideosGPU2.py
+```
 To run AutoAudio:  
-`python AutoAudioGPU.py`
-
+```
+python AutoAudioGPU.py
+```
 
 Don't worry if when you run it, it gives the following message:  
 ```
