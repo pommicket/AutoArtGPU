@@ -14,7 +14,6 @@ import namemaker3
 import os
 import wave
 import struct
-import time
 
 directory = os.path.realpath(__file__)
 
@@ -27,7 +26,7 @@ single = ['cos', 'sin'] #Operations on a single number
 binary = ['*', '+', '-'] #Operations for 2 numbers
 numlist = ['x', 'Constant']
 
-def randFunction(length, singleweight, numberweight):
+def randFunction(functionLength, singleweight, numberweight):
     hasx = False
     while not hasx:
         #Types: b for binary, s for single, f for first, n for number
@@ -38,7 +37,7 @@ def randFunction(length, singleweight, numberweight):
         chanceend = 0
         length = 1 #Number of operations done so far
         while True:
-            chanceend = (1.0 - (1.0 / length)) ** 12.0
+            chanceend = (1.0 - (1.0 / length)) ** (float(functionLength)/7)
             if lasttype == 'n':
                 number = random.random()
                 if number < chanceend:
@@ -132,8 +131,8 @@ def createAudios():
 
     loadingLabel.destroy()
     
-    finishedLabel = tk.Label(root, text='AutoAudio has finished creating your\
- audio files.')
+    finishedLabel = tk.Label(root, text='AutoImages has finished creating your\
+ images.')
     finishedLabel.grid(row=2, column=0)
 
     goToMenuButton = tk.Button(root, text='Go back to menu', command=goToMenu)
