@@ -57,7 +57,13 @@ Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
 "to see more.", CompilerWarning)
 ```
 
-Also don't worry if AutoArt closes at, say, 10/15, prints `Segmentation Fault`, and re-opens saying 0/5, all 15 images will be made.
+Also don't worry if AutoArt closes at, say, 10/15, prints `Segmentation Fault`, asks you to choose your device again, and re-opens saying 0/5, all 15 images will be made.
+
+To set a default platform, just change the line
+```
+GPU.platform_id = -1
+```
+To the ID number of your platform (which should be 0 or 1).
 
 You should not create images/videos with a resolution of over 3000x3000, or audio files that are over 10 minutes in length (but this depends on the amount of memory your GPU has). If you create an image/video that is too large or an audio file that is too long, you will see the following error message:
 
