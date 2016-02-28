@@ -92,8 +92,11 @@ def createVideo(width, height, videoLength, frameRate, functionLength,
     clProgramTemplate2 = replace(clProgramTemplate2, '<RFUNCTION>', rfunction)
     clProgramTemplate2 = replace(clProgramTemplate2, '<GFUNCTION>', gfunction)
     clProgramTemplate2 = replace(clProgramTemplate2, '<BFUNCTION>', bfunction)
-
-    fourcc = cv2.cv.CV_FOURCC(*'XVID')
+    
+    try:
+        fourcc = cv2.cv.CV_FOURCC(*'XVID')
+    except:
+        fourcc = cv2.VideoWriter_fourcc(*'XVID')
     name = ' '.join([namemaker3.generate() for i in range(3)]) + '.avi'
     out = cv2.VideoWriter(directory+'/'+name,fourcc, frameRate, (width,height))
 
