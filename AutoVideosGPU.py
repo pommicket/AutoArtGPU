@@ -98,8 +98,13 @@ def createVideo(width, height, videoLength, frameRate, functionLength,
     except:
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
     name = ' '.join([namemaker3.generate() for i in range(3)]) + '.avi'
-    out = cv2.VideoWriter(directory+'/'+name,fourcc, frameRate, (width,height))
-
+    out = cv2.VideoWriter(directory+'/'+name, fourcc, frameRate, (width,height))
+    if not out.isOpened():
+        try:
+            fourcc = cv2.cv.CV_FOURCC(*'MJPG')
+        except:
+            fourcc = cv2.VideoWriter_fourcc(*'MJPG')
+        out = cv2.VideoWriter(directory+'/'+name, fourcc, frameRate, (width,height))
     
     for t in range(int(videoLength*frameRate)):
         clProgram = replace(clProgramTemplate2, '<FRAMENUMBER>', str(t))
@@ -120,6 +125,7 @@ def createVideo(width, height, videoLength, frameRate, functionLength,
         out.write(output[:, :, ::-1])
         
     out.release()
+    
 
 def createVideos():
     

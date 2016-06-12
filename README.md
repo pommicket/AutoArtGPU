@@ -40,11 +40,11 @@ cd /directory/where/AutoArt/is/
 
 To run AutoImages:  
 ```
-python AutoImagesGPU2.py
+python AutoImagesGPU.py
 ```
 To run AutoVideos:  
 ```
-python AutoVideosGPU2.py
+python AutoVideosGPU.py
 ```
 To run AutoAudio:  
 ```
