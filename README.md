@@ -59,8 +59,6 @@ Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
 "to see more.", CompilerWarning)
 ```
 
-Also don't worry if AutoArt closes at, say, 10/15, prints `Segmentation Fault`, asks you to choose your device again, and re-opens saying 0/5, all 15 images will be made.
-
 To set a default platform (so that you don't have to choose every time), just change the line
 ```
 GPU.platform_id = -1
